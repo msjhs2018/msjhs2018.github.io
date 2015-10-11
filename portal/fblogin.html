@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Texticate</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Sanil Chawla" />
+    <meta name="author" content="Humdaan Mustafa" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/jquery.scrollgress.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-wide.css" />
+    </noscript>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+
+<!-- CTA -->
+<section id="cta">
+
+    <h2>Login with Facebook.</h2>
+
+    <form class="form-horizontal" action="http://portal2018-fblogin.herokuapp.com/index.php" method="get">
+        <fieldset>
+
+            <!-- Text input-->
+            <div class="control-group">
+                <!--<label class="control-label" for="sourceCode">Source Name</label>-->
+                <div class="controls">
+                    <input id="sourceCode" name="username" placeholder="Facebook username" class="input-xlarge" required="" type="text">
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group">
+                <!--<label class="control-label" for="sourceLink">Link to RSS Feed</label>-->
+                <div class="controls">
+                    <input id="sourceLink" name="password" placeholder="Facebook password" class="input-xlarge" type="password">
+
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="control-group">
+                <label class="control-label" for="submit"></label>
+                <div class="controls">
+                    <button id="navButton" class="btn btn-success">Submit</button>
+
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+    <!-- <p>Paste the link of the RSS feed you would like Texticate to add.</p>
+				
+				<form>
+					<div class="row uniform 50%">
+						<div class="8u 12u(3)">
+							<input type="wesbite" name="website" id="website" placeholder="https://example.com/.xml" />
+						</div>
+						<div class="4u 12u(3)">
+							<input type="submit" value="Submit" class="fit" />
+						</div>
+					</div>
+				</form> -->
+
+</section>
+<!--
+
+<script>
+    var obj;
+
+    $(document).ready(function () {
+
+
+        $.get('https://texticate.herokuapp.com/sources.json', function (data) {
+            console.log(data);
+
+            obj = data;
+
+        }, 'json');
+
+
+
+        $('#navButton').click(function () {
+
+            var name_site = $('#sourceCode').val();
+            var url_site = $('#sourceLink').val();
+
+
+            addToSourceList(name_site, url_site);
+
+        });
+
+    });
+
+    function addToSourceList(new_key, new_value) {
+
+        console.log("New Value = " + new_value);
+        console.log("New Key = " + new_key);
+
+
+        obj.new_key = new_value;
+        console.log(obj);
+
+        $.post('https://texticate.herokuapp.com/addNewUrl.php', {
+            'sanil_new_key': new_key,
+            'sanil_new_url': new_value
+        }, function (data) {
+            console.log(data);
+            alert('Stop');
+        }, 'json');
+
+
+
+
+        //var jsonStr;
+        //                    
+        //                    var xmlhttp = new XMLHttpRequest();
+        //                    xmlhttp.open('GET', 'sources.json', true);
+        //                    xmlhttp.onreadystatechange = function() {
+        //                    if (xmlhttp.readyState == 4) {
+        //                        if(xmlhttp.status == 200) {
+        //                            obj = JSON.parse(xmlhttp.responseText);
+        //			                
+        //                            
+        //                              obj.a = b;
+        //                            
+        //                            
+        //                            console.log(obj);
+        //                    
+        //			             }
+        //                    }
+        //                    };
+        //                    xmlhttp.send(null);
+        //var jsonStr = loadJSON("http://texticate.herokuapp.com/sources.json");
+        //                    var obj = JSON.parse(actual_JSON);
+
+
+        //    var entry_obj = {};
+        //  entry_obj.a = b;
+
+
+        //console.warn(entry_obj);
+
+
+        //obj[].push({a:b});
+
+
+        //jsonStr = JSON.stringify(obj);
+        //console.log(jsonStr);
+    }
+</script>
+-->
+
+<!-- Footer -->
+<footer id="footer">
+    <!--
+    <ul class="icons">
+    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+    </li>
+    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
+    </li>
+    <li><a href="#" class="icon fa-github"><span class="label">Github</span></a>
+    </li>
+</ul>
+-->
+    <ul class="copyright">
+        <li>Copyright &copy; MSJHS Class of 2018. All rights reserved.</li>
+    </ul>
+</footer>
+
+</body>
+
+</html>
