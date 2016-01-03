@@ -1,49 +1,222 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
 <html>
 
 <head>
     <title>MSJHS Class of 2018</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The official website for the Mission San Jose High School Class of 2018.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/logo-pump.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/logo-pump.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/logo-pump.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/icon.ico">
+    <link rel="stylesheet" href="assets/css/md.css" />
+    <link rel="stylesheet" href="assets/css/md-officers.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="assets/material.js"></script>
+
+    <style>
+        .demo-layout-transparent {
+            background: url('images/stars.jpeg') center / cover;
+        }
+        
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent .mdl-layout__drawer-button {
+            /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+            color: white;
+        }
+
+    </style>
+
+    <style>
+        .demo-card-wide.mdl-card {
+            max-width: 90vw;
+        }
+        
+        .demo-card-wide > .mdl-card__title {
+            color: #fff;
+            height: 176px;
+        }
+        
+        .welcome-card {
+            background: url('images/night.jpeg') center / cover;
+        }
+        
+        .officers-card {
+            background: url('images/trees.jpeg') center / cover;
+        }
+        
+        .oops-card {
+            background: url('images/ggb.jpeg') center / cover;
+        }
+        
+        .demo-card-wide > .mdl-card__menu {
+            color: #fff;
+        }
+
+    </style>
 </head>
 
+
 <body>
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title"><img src="images/logo-white.png" style="height: 50px"/> </span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="#about">About Us</a>
+                    <a class="mdl-navigation__link" href="#officers">Officers</a>
+                    <a class="mdl-navigation__link" href="http://msjhs2018.org/files/transparency">Transparency</a>
+                    <!--                    <a class="mdl-navigation__link" href="">News</a>-->
+                    <a class="mdl-navigation__link" href="#footer">Contact Us</a>
+                    <a class="mdl-navigation__link" href="http://portal.msjhs2018.org/">PORTAL</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title"><img src="images/logo-blk.png" style="height: 50px"/></span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#about">About Us</a>
+                <a class="mdl-navigation__link" href="#officers">Officers</a>
+                <a class="mdl-navigation__link" href="http://msjhs2018.org/files/transparency">Transparency</a>
+                <!--                    <a class="mdl-navigation__link" href="">News</a>-->
+                <a class="mdl-navigation__link" href="#footer">Contact Us</a>
+                <a class="mdl-navigation__link" href="http://portal.msjhs2018.org/">PORTAL</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="banner">
+                <!-- Banner -->
+                <img src="images/lutw.png" id="banner" />
+            </div>
+            <div class="container" />
+            <!-- About Us (card) -->
+            <div class="demo-container demo-card-wide mdl-card mdl-shadow--2dp" id="about">
+                <div class="mdl-card__title welcome-card">
+                    <h2 class="mdl-card__title-text">Hey there!</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Welcome to the official website for the Class of 2018!
+                    <br/>Here you'll find all kinds of information about our class, as well as some important information for students.
+                </div>
+                <!--
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
+                </div>
+                -->
+            </div>
 
-    <!-- Header -->
-    <header id="header">
-        <h1>MSJHS Class of 2018</h1>
-        <p>The new website is coming soon.
-            <br /> Keep checking back for updates.
-            <br /> - Sanil <i class="icon fa-heart"></i></p>
-    </header>
+            <div class="spacer"></div>
 
-    <!-- Signup Form -->
-    <form id="signup-forma" action="http://msjhs2018.us10.list-manage.com/subscribe/post?u=7f92f4a0e5d6a4317e7c0a8ea&amp;id=6972ccedfc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="Email Address" />
-        <input type="submit" name="subscribe" value="Subscribe" />
-    </form>
+            <div class="demo-container demo-card-wide mdl-card mdl-shadow--2dp" id="officers">
+                <div class="mdl-card__title officers-card">
+                    <h2 class="mdl-card__title-text">Our Officers</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--3-col centerthat">
+                            <img class="pp" src="officers/cherin.jpg" />
+                            <p>
+                                <strong>Austin Chang</strong>
+                                <br/>President
+                            </p>
+                            <p>"I am a chair who likes to be a chair and this is a test test test."</p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col centerthat">
+                            <img class="pp" src="officers/cherin.jpg" />
+                            <p>
+                                <strong>Raymond Yin</strong>
+                                <br/>Vice President
+                            </p>
+                            <p>"I am a chair who likes to be a chair and this is a test test test."</p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col centerthat">
+                            <img class="pp" src="officers/cherin.jpg" />
+                            <p>
+                                <strong>Cherin Koh</strong>
+                                <br/>Treasurer
+                            </p>
+                            <p>"I am a chair who likes to be a chair and this is a test test test."</p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col centerthat">
+                            <img class="pp" src="officers/sanil.jpg" />
+                            <p>
+                                <strong>Sanil Chawla</strong>
+                                <br/>Secretary
+                            </p>
+                            <p>"Techy guy by day, and... the same by night."</p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
+                </div>
+                -->
+            </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="icons">
-            <!--					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>-->
-            <!--					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
-            <li><a href="http://facebook.com/groups/msjhs2018" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="mailto:officers@msjhs2018.org" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; MSJHS Class of 2018.</li>
-        </ul>
-    </footer>
+            <div class="spacer"></div>
 
-    <!-- Scripts -->
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="assets/js/main.js"></script>
+            <div class="demo-container demo-card-wide mdl-card mdl-shadow--2dp" id="oops">
+                <div class="mdl-card__title oops-card">
+                    <h2 class="mdl-card__title-text">I know what you're thinking...</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Yeah, this site is pretty bare right now. But don't worry! I'm still working on adding on several features, including a contact form, email subscription signup form, a news stream, and potentially others as well! If you've got any ideas, feel free to reach out to me <a href="mailto:hi@sanil.co">via email</a> or <a href="http://sanil.co/fb">through Facebook</a> and let me know.
+                    <br/>But hey, in the meantime, why not check out the new PORTAL?
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://portal.msjhs2018.org">Go to PORTAL</a>
+                </div>
+            </div>
 
+            <div class="spacer"></div>
+
+            <!--
+            <div class="demo-container mdl-grid">
+                <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+                <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                    <h3>Hey there!</h3>
+                    <p>Welcome to the official website for the Class of 2018!</p>
+                    <p>Here you'll find all kinds of information about our class, as well as some important information for students.</p>
+                </div>
+            </div>
+-->
+            <!--  Footer -->
+            <footer class="mdl-mini-footer" style="width: 90vw; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                <div class="mdl-mini-footer__left-section" style="padding-left: 20px">
+                    <div class="mdl-logo">&copy; 2016 MSJHS Class of 2018. Images by <a href="http://unsplash.com/">Unsplash</a>. Site by <a href="http://sanil.co/">Sanil Chawla</a>.</div>
+                    <ul class="mdl-mini-footer__link-list">
+                        <li>You can find us on:</li>
+                        <li><a href="https://facebook.com/groups/msjhs2018/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://instagram.com/msjhs18"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+    </div>
+    </main>
+    </div>
 </body>
 
 </html>
